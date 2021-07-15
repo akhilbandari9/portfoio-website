@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 const links = [
 	{
@@ -23,11 +24,14 @@ const Header = () => {
 	return (
 		<header className='w-screen h-full md:h-16 bg-primary-darker  px-4 py-2 flex flex-col md:flex-row gap-2 items-center justify-between mb-4 '>
 			<div className='rounded-lg mt-0 md:mt-2  self-center  md:self-start'>
-				<img
-					src='/logo_main.png'
-					className='w-12 md:w-24 hover:animate-spin'
-					alt='Akhil Bandari'
-				/>
+				<div className='hover:animate-spin'>
+					<Image
+						width={100}
+						height={100}
+						src='/logo_main.png'
+						alt='Akhil Bandari'
+					/>
+				</div>
 			</div>
 			<nav className='text-white md:text-xl text-base font-medium'>
 				<ul className='flex gap-6 md:mr-12'>

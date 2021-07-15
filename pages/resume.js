@@ -11,6 +11,7 @@ const Resume = () => {
 				<a
 					className='mb-2 bg-secondary text-white px-4 py-2 flex gap-2 rounded-lg justify-center items-center group'
 					href='/resume.pdf'
+					rel='noreferrer'
 					download
 				>
 					<span>

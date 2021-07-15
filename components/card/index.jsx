@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import LinkExt from '../utils/LinkExt'
 import Heading from '../utils/Heading'
 
@@ -14,10 +15,11 @@ const index = ({ p }) => {
 						<div className='flex justify-between items-center border-b border-secondary border-opacity-20 pb-2 mb-3'>
 							<Heading type='h3'>{p.project_name}</Heading>
 							<div className='h-14 flex-shrink-0 ml-2'>
-								<img
+								<Image
 									src={`/${p.page_id}/logo.png`}
 									alt={p.project_name}
-									className='w-14'
+									height={60}
+									width={60}
 								/>
 							</div>
 						</div>

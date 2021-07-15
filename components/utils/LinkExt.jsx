@@ -11,7 +11,7 @@ const LinkExt = ({ children, href, icon, variant }) => {
 			: 'text-secondary hover:text-opacity-80 text-sm'
 
 	return (
-		<a target='_blank' href={href}>
+		<a target='_blank' rel='noreferrer' href={href}>
 			<span
 				className={`${styles} font-medium font-ibm italic p-1 pr-3 group flex items-center cursor-pointer rounded-md gap-2`}
 			>
