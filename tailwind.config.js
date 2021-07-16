@@ -5,20 +5,15 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				transparent: 'transparent',
-				current: 'currentColor',
-				white: colors.white,
-				black: colors.black,
-				gray: colors.gray,
-				orange: { DEFAULT: '#fc4a1a', 500: '#fc4a1a' },
 				secondary: {
-					DEFAULT: '#f78733',
+					DEFAULT: '#FCA311',
 				},
-				header: '#4abdac',
+				lightGray: { DEFAULT: '#C1C4CC' },
 				primary: {
-					light: '#47adb4',
-					dark: '#2f6b78',
-					darker: '#16384b',
+					lighter: '#868D9C',
+					light: '#4E586E',
+					DEFAULT: '#14213d',
+					dark: '#121E37',
 				},
 			},
 			fontFamily: {

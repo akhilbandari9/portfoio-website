@@ -7,7 +7,7 @@ import {
 const LinkExt = ({ children, href, icon, variant }) => {
 	const styles =
 		variant === 'solid'
-			? 'bg-primary-light text-white hover:bg-opacity-90 p-2 text-sm sm:text-base'
+			? 'bg-primary-light text-lightGray hover:bg-opacity-80 p-2 text-sm sm:text-base'
 			: 'text-secondary hover:text-opacity-80 text-sm'
 
 	return (

@@ -5,8 +5,9 @@
 
 body {
 	/* background-color: #fafafa; */
-	background-color: #f0ffff;
+	background-color: #14213d;
 	font-family: 'Inter', sans-serif;
+	overflow-x: hidden;
 }
 
 @tailwind base;
@@ -14,3 +15,11 @@ body {
 @tailwind utilities;
 
 @import './custom.css';
+
+:root {
+	--black: #000000;
+	--oxford-blue: #14213d;
+	--orange-web: #fca311;
+	--platinum: #e5e5e5;
+	--white: #ffffff;
+}

@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
 					sizes='16x16'
 				></link>
 			</Head>
-			<div className='font-inter text-primary-darker text-base font-medium'>
+			<div className='font-inter text-lightGray text-base'>
 				<Header />
 				<main className='max-w-screen-lg mx-auto px-2 md:px-4'>{children}</main>
 			</div>

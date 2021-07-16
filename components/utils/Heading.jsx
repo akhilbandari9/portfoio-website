@@ -1,10 +1,10 @@
-const Heading = ({ type, children, align = '', ...restProps }) => {
+const Heading = ({ type, children, align = 'start', ...restProps }) => {
 	switch (type) {
 		case 'h1':
 			return (
-				<div className={`flex mx-auto justify-${align}`}>
+				<div className={`flex justify-${align} w-full`}>
 					<h1
-						className={`md:text-5xl text-4xl my-3 text-primary-dark font-extralight pb-1.5 border-b-4 border-secondary`}
+						className={`md:text-5xl text-4xl my-3 text-secondary font-extralight`}
 						{...restProps}
 					>
 						{children}
@@ -23,7 +23,7 @@ const Heading = ({ type, children, align = '', ...restProps }) => {
 		default:
 			return (
 				<h2
-					className='text-2xl md:text-3xl mt-8 mb-3 text-primary-dark font-medium pb-1 border-b border-secondary inline-block'
+					className='text-2xl md:text-3xl mt-8 mb-3 text-primary-lighter font-medium pb-1 border-b border-secondary border-opacity-70 inline-block'
 					{...restProps}
 				>
 					{children}

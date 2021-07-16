@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { getProjects } from '../../services/notion'
-import Card from '../../components/card'
+import Card from '../../components/cards/ProjectCard'
 import Heading from '../../components/utils/Heading'
 
 const ProjectsPage = ({ projects }) => {
@@ -14,7 +14,7 @@ const ProjectsPage = ({ projects }) => {
 				<Heading align='center' type='h1'>
 					Projects
 				</Heading>
-				<div className='flex flex-wrap justify-evenly mt-8'>
+				<div className='flex flex-wrap justify-evenly gap-4 mt-4 md:mt-8 '>
 					{projects.map((p) => (
 						<Card key={p.page_id} p={p} />
 					))}
