@@ -41,7 +41,7 @@ export default function Home() {
 							>
 								Contact Me
 							</a>
-							<Link href='/projects'>
+							<Link href='/projects' passHref>
 								<span className='py-3 md:py-4 px-6 md:px-8 border-2 text-secondary border-secondary font-bold cursor-pointer'>
 									Projects
 								</span>
@@ -55,7 +55,7 @@ export default function Home() {
 					</Heading>
 					<div className='flex flex-wrap justify-center gap-10 mt-8'>
 						{skills.map((item) => (
-							<SkillCard name={item} />
+							<SkillCard key={item} name={item} />
 						))}
 					</div>
 				</section>

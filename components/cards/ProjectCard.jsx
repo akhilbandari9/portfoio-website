@@ -9,7 +9,7 @@ const ProjectCard = ({ p }) => {
 			className='w-80 flex flex-col justify-between border border-secondary border-opacity-30 bg-white bg-opacity-5  shadow-md rounded-lg mb-8'
 			key={p.page_id}
 		>
-			<Link href={`/projects/${p.page_id}`}>
+			<Link href={`/projects/${p.page_id}`} passHref>
 				<div className='p-5 cursor-pointer '>
 					<header className='mb-4'>
 						<div className='flex justify-between items-center border-b border-secondary border-opacity-20 pb-2 mb-3'>
