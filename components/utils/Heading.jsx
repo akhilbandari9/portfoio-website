@@ -14,7 +14,7 @@ const Heading = ({ type, children, align = 'start', ...restProps }) => {
 		case 'h3':
 			return (
 				<h3
-					className='md:text-xl text-lg text-gray-500 font-medium'
+					className='md:text-xl text-lg text-lightGray font-medium'
 					{...restProps}
 				>
 					{children}

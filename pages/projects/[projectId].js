@@ -45,7 +45,9 @@ const ProjectDetailsPage = ({ pageData, blocksData }) => {
 						<div>
 							<Heading>Project Details</Heading>
 							{blocksData.map((item) => (
-								<p key={item.block_id}>{item.text}</p>
+								<p className='mt-2' key={item.block_id}>
+									{item.text}
+								</p>
 							))}
 						</div>
 					</section>

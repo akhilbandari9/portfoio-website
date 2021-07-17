@@ -27,22 +27,22 @@ export default function Home() {
 								I build things for the web.
 							</span>
 						</h1>
-						<div className='md:w-1/2 my-6 md:my-8 text-base md:text-lg'>
+						<div className='w-11/12 md:w-1/2 mt-8 md:my-8 text-base md:text-lg'>
 							I build fast and high performat web applications with{' '}
 							<span className='underline'>Javascript and ReactJs</span> . I am
-							currently looking for a fulltime postion as Front End Development.
+							currently looking for a fulltime postion as Front End Developer.
 						</div>
-						<div className='flex gap-4 justify-between items-center self-end md:self-start'>
+						<div className='flex gap-4 justify-between items-center self-center md:self-start mt-10 md:mt-4'>
 							<a
 								href='mailto:akhilbandari9999@gmail.com?'
 								target='_blank'
 								rel='noreferrer'
-								className='py-3 md:py-4 px-6 md:px-8 bg-secondary border-2 border-secondary active:bg-opacity-80 text-primary-dark font-bold '
+								className='py-2.5 md:py-4 px-5 md:px-8 bg-secondary border-2 border-secondary active:bg-opacity-80 text-primary-dark font-bold '
 							>
 								Contact Me
 							</a>
 							<Link href='/projects' passHref>
-								<span className='py-3 md:py-4 px-6 md:px-8 border-2 text-secondary border-secondary font-bold cursor-pointer'>
+								<span className='py-2.5 md:py-4 px-5 md:px-8 border-2 text-secondary border-secondary font-bold cursor-pointer'>
 									Projects
 								</span>
 							</Link>
@@ -53,7 +53,7 @@ export default function Home() {
 					<Heading type='h1' align='center'>
 						Skills
 					</Heading>
-					<div className='flex flex-wrap justify-center gap-10 mt-8'>
+					<div className='flex flex-wrap justify-center gap-6 md:gap-10 mt-8'>
 						{skills.map((item) => (
 							<SkillCard key={item} name={item} />
 						))}

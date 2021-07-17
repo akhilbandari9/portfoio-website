@@ -9,7 +9,7 @@ const Resume = () => {
 			</Head>
 			<div className='flex justify-end'>
 				<a
-					className='mb-2 bg-secondary text-white px-4 py-2 flex gap-2 rounded-lg justify-center items-center group'
+					className='mb-2 bg-secondary text-primary-dark font-semibold px-4 py-2 flex gap-2 justify-center items-center group'
 					href='/resume.pdf'
 					rel='noreferrer'
 					download
@@ -19,14 +19,6 @@ const Resume = () => {
 					</span>
 					<span className='group-hover:underline'>Download</span>
 				</a>
-			</div>
-
-			<div className='h-screen overflow-x-hidden'>
-				<embed
-					className='h-full w-full '
-					type='application/pdf'
-					src='/resume.pdf'
-				></embed>
 			</div>
 		</>
 	)

@@ -13,7 +13,7 @@ const LinkExt = ({ children, href, icon, variant }) => {
 	return (
 		<a target='_blank' rel='noreferrer' href={href}>
 			<span
-				className={`${styles} font-medium font-ibm italic p-1 pr-3 group flex items-center cursor-pointer rounded-md gap-2`}
+				className={`${styles} font-medium font-ibm italic p-1 pr-3 group flex items-center cursor-pointer gap-2`}
 			>
 				<span className='w-6 h-6'>
 					{icon === 'code' ? <CodeIcon /> : <StatusOnlineIcon />}

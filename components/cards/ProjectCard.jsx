@@ -6,7 +6,7 @@ import Heading from '../utils/Heading'
 const ProjectCard = ({ p }) => {
 	return (
 		<div
-			className='w-80 flex flex-col justify-between border border-secondary border-opacity-30 bg-white bg-opacity-5  shadow-md rounded-lg mb-8'
+			className='w-80 flex flex-col justify-between border border-secondary border-opacity-30 bg-white bg-opacity-5  shadow-md  mb-8'
 			key={p.page_id}
 		>
 			<Link href={`/projects/${p.page_id}`} passHref>
